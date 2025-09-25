@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Edit Product</h2>
+<form method="POST">
+    <label>Product ID</label>
+    <input type="text" name="product_id" value="{{ product.product_id }}" readonly>
+    <label>Product Name</label>
+    <input type="text" name="name" value="{{ product.name }}" required>
+    <button class="btn" type="submit">Update Product</button>
+</form>
+{% endblock %}

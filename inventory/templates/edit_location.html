@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Edit Location</h2>
+<form method="POST">
+    <label>Location ID</label>
+    <input type="text" name="location_id" value="{{ location.location_id }}" readonly>
+    <label>Location Name</label>
+    <input type="text" name="name" value="{{ location.name }}" required>
+    <button class="btn" type="submit">Update Location</button>
+</form>
+{% endblock %}

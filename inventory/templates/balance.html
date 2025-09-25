@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Balance Quantity</h2>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Location</th>
+        <th>Quantity</th>
+    </tr>
+    {% for b in balances %}
+    <tr>
+        <td>{{ b.product_id }}</td>
+        <td>{{ b.location_id }}</td>
+        <td>{{ b.qty }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
